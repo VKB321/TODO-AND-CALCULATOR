@@ -1,0 +1,65 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: aqua;
+}
+.Main_Container{
+    top: 50%;
+    left: 50%;
+    width: 60vw;
+    position: absolute;
+    box-shadow: 5px 5px 5px 5px #111;
+    border-radius: 10px;
+    background-color: rgb(241, 241, 175);
+   transform: translate(-50% , -50%);
+   text-align: center;
+}
+
+h1{
+    border-bottom: 2px solid black;
+}
+
+input[type='text']{
+    background-color: aliceblue;
+    text-align: center;
+    margin-right: 2px;
+    color: black;
+}
+#btn{
+    position: relative;
+    border-radius: 56%;
+    font-size: large;
+    background-color: rgb(18, 218, 18);
+    
+}
+ul>li{
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+    list-style: none;
+    grid-gap: 2px;
+    word-wrap: break-word;
+}
+#list_items{
+    grid-column: -1/3;
+    text-align: left;
+    font-size: 20px;
+   align-self: center;
+}
+
+#delete,#edit{
+    margin-top: 18px;
+    width: auto;
+    height: 6vh;
+    border-radius: 5px;
+    font-size: 30px;
+    
+}
+#delete{
+    color: white;
+    background-color: red;
+}
+
+#edit{
+    color: white;
+    background-color: yellowgreen;
+}
