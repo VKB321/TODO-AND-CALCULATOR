@@ -20,7 +20,7 @@ const time = new Date().toLocaleTimeString()
     return (
         <>
         <div className="container">
-           <h1 style={{color: "white", height: "2vh", textAlign: "center"}}>Normal Calculator clone</h1>
+           <h3 style={{color: "white", height: "2vh", textAlign: "center"}}>Normal-Calculator</h3>
             <form>
                 <input type="text" value={result}/>
             </form>
