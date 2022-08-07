@@ -1,6 +1,9 @@
 import React , {useState} from 'react';
 import "./Calculator.css"
+import {useNavigate} from 'react-router-dom'
+
 function Calculator(){
+    const navigate = useNavigate()
     const[result, setResult]=useState('');
     const handleclick=(e)=>{
         setResult(result.concat(e.target.name))
@@ -20,6 +23,7 @@ const time = new Date().toLocaleTimeString()
     return (
         <>
         <div className="container">
+            <button className='calsi' onClick={()=>navigate(-1)}>Back</button>
            <h3 style={{color: "white", height: "2vh", textAlign: "center"}}>Normal-Calculator</h3>
             <form>
                 <input type="text" value={result}/>
